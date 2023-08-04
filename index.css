@@ -1,0 +1,81 @@
+body {
+    color: aliceblue;
+    background-color: black;
+    font-family: 'Space Grotesk', sans-serif;
+    width: min(90%, 1000px);
+    margin-inline: auto;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 96px;
+    /* line-height: 96px; */
+    margin-block: 1rem;  
+}
+
+p {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: right;
+}
+
+button {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #542bec;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 800px) {
+    h2 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 25px;
+    }
+    button {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        height: 50vh;
+        display: flex;
+        align-items: center;
+    }
+
+    h2 {
+        margin-top: 2rem;
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    button {
+        margin-top: 2rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 4px;
+        padding-right: 4px;
+        font-size: 10px;
+    }
+}
